@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Link, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Link, Routes, Route, BrowserRouter } from 'react-router-dom';
 import logo from './logo.png';
 import reload from './reload.png';
 import './App.css';
@@ -145,7 +145,7 @@ function ResultPage() {
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <div className="App">
         <div className='centered'>
           <Routes>
@@ -156,7 +156,7 @@ function App() {
 
         </div>
       </div>
-    </Router>
+    </BrowserRouter>
   );
 }
 export default App;
