@@ -117,6 +117,18 @@ function ResultPage() {
 
       <div className="titleContainer">
         <div>
+          <div className="smallTitle">내가 입력한 내 힌트는?</div>
+          <div className="detail">(My hint I entered is ..)</div>
+        </div>
+      </div>
+      <div className="myhintContainer">
+        <div className="myhintText">
+          춘식이 엄마
+        </div>
+      </div>
+
+      <div className="titleContainer">
+        <div>
           <div className="smallTitle">행운의 번호를 드릴게요.</div>
           <div className="detail">(Your prize code is..)</div>
         </div>
