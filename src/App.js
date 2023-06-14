@@ -123,9 +123,14 @@ function ResultPage() {
       </div>
 
       <div className='numberContainer'>
+      <div className='numberBorder'>
+          <div className='number'>
+            {Math.floor(prizeNumber / 100)}
+          </div>
+        </div>
         <div className='numberBorder'>
           <div className='number'>
-            {Math.floor(prizeNumber / 10)}
+            {Math.floor((prizeNumber %100) /10)}
           </div>
         </div>
         <div className='numberBorder'>
