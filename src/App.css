@@ -61,6 +61,7 @@
   width: 80%;
   border: none;
   text-align: center;
+  margin-top:30px;
   margin-right: auto;
   margin-left: auto;
   text-decoration: none;
@@ -75,7 +76,14 @@
   text-align: left;
   font-size: 20px;
   color: white;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+}
+.errorText{
+  display:none;
+  color: red;
+  font-size: x-small;
+  text-align: left;
+  margin-left: 30px;
 }
 
 .inputText::placeholder {
@@ -220,3 +228,17 @@
   font-size: 64px;
   font-weight:bolder;
 }
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
